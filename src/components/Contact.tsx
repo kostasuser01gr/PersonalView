@@ -1,24 +1,33 @@
+import RevealOnScroll from "./RevealOnScroll";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-32 px-6 bg-surface/50">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-sm font-mono text-accent tracking-wide mb-8">
-          Contact
-        </h2>
+        <RevealOnScroll>
+          <h2 className="text-sm font-mono text-accent tracking-wide mb-8">
+            Contact
+          </h2>
+        </RevealOnScroll>
 
-        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
-          Let&apos;s talk.
-        </h3>
+        <RevealOnScroll delay={100}>
+          <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            Let&apos;s talk.
+          </h3>
+        </RevealOnScroll>
 
-        <p className="text-muted text-lg max-w-md mx-auto mb-10 leading-relaxed">
-          I&apos;m open to full-time roles, contract work, and interesting
-          projects. If you think there&apos;s a fit, reach out.
-        </p>
+        <RevealOnScroll delay={200}>
+          <p className="text-muted text-lg max-w-md mx-auto mb-10 leading-relaxed">
+            I&apos;m open to full-time roles, contract work, and interesting
+            projects. If you think there&apos;s a fit, reach out.
+          </p>
+        </RevealOnScroll>
 
+        <RevealOnScroll delay={300}>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
             href="mailto:kostasfoskolakis19@gmail.com"
-            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium text-sm transition-all glow"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium text-sm transition-all glow hover:scale-[1.02] active:scale-[0.98]"
           >
             <svg
               width="16"
@@ -37,7 +46,7 @@ export default function Contact() {
             href="https://github.com/kostasuser01gr"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-border hover:border-muted text-foreground px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-surface"
+            className="inline-flex items-center gap-2 border border-border hover:border-accent/40 text-foreground px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-surface hover:scale-[1.02] active:scale-[0.98]"
           >
             <svg
               width="16"
@@ -53,7 +62,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/konstantinos-foskolakis-b63891260/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-border hover:border-muted text-foreground px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-surface"
+            className="inline-flex items-center gap-2 border border-border hover:border-accent/40 text-foreground px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-surface hover:scale-[1.02] active:scale-[0.98]"
           >
             <svg
               width="16"
@@ -66,6 +75,7 @@ export default function Contact() {
             LinkedIn
           </a>
         </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

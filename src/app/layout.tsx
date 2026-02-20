@@ -15,12 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Konstantinos Foskolakis — Full Stack Engineer",
   description:
-    "Full Stack Engineer specializing in React, TypeScript, Python APIs, and scalable web applications.",
+    "Full Stack Engineer specializing in React, TypeScript, Python APIs, and scalable web applications. Certified by micro1.",
+  keywords: ["Full Stack Engineer", "React", "TypeScript", "Python", "Next.js", "Konstantinos Foskolakis"],
+  authors: [{ name: "Konstantinos Foskolakis" }],
   openGraph: {
     title: "Konstantinos Foskolakis — Full Stack Engineer",
     description:
       "Full Stack Engineer specializing in React, TypeScript, Python APIs, and scalable web applications.",
     type: "website",
+    images: [{ url: "/profile.png", width: 1024, height: 1536, alt: "Konstantinos Foskolakis" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Konstantinos Foskolakis — Full Stack Engineer",
+    description: "Full Stack Engineer: React, TypeScript, Python APIs & scalable web apps.",
+    images: ["/profile.png"],
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
 };
 

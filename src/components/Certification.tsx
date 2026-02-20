@@ -1,17 +1,22 @@
+import RevealOnScroll from "./RevealOnScroll";
+
 export default function Certification() {
   return (
     <section id="certification" className="py-32 px-6">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
-          Verification
-        </h2>
-        <p className="text-muted text-base mb-12 max-w-lg">
-          Independently verified through micro1&apos;s AI technical interview
-          process.
-        </p>
+        <RevealOnScroll>
+          <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
+            Verification
+          </h2>
+          <p className="text-muted text-base mb-12 max-w-lg">
+            Independently verified through micro1&apos;s AI technical interview
+            process.
+          </p>
+        </RevealOnScroll>
 
         {/* Certificate Card */}
-        <div className="relative rounded-2xl border border-border bg-[#0c0c0c] overflow-hidden">
+        <RevealOnScroll delay={200} direction="scale">
+        <div className="relative rounded-2xl border border-border bg-[#0c0c0c] overflow-hidden hover:border-green-500/30 transition-colors duration-500">
           {/* Top green glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-40 bg-green-500/10 blur-3xl rounded-full pointer-events-none" />
 
@@ -101,6 +106,7 @@ export default function Certification() {
             </div>
           </div>
         </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

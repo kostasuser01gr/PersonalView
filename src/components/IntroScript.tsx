@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import RevealOnScroll from "./RevealOnScroll";
 
 const scriptParagraphs = [
   {
@@ -39,14 +40,17 @@ export default function IntroScript() {
   return (
     <section id="script" className="py-32 px-6">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
-          Video Intro Script
-        </h2>
-        <p className="text-muted text-base mb-12 max-w-lg">
-          A 90-second introduction — ready to record. Click each section to
-          highlight it while practicing.
-        </p>
+        <RevealOnScroll>
+          <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
+            Video Intro Script
+          </h2>
+          <p className="text-muted text-base mb-12 max-w-lg">
+            A 90-second introduction — ready to record. Click each section to
+            highlight it while practicing.
+          </p>
+        </RevealOnScroll>
 
+        <RevealOnScroll delay={150}>
         <div className="relative border border-border rounded-xl bg-surface/30 p-8 sm:p-10">
           {/* Decorative quote mark */}
           <div className="absolute top-6 right-8 text-6xl text-border font-serif select-none">
@@ -56,7 +60,9 @@ export default function IntroScript() {
           <div className="space-y-6">
             {scriptParagraphs.map((paragraph, i) => (
               <div
-                key={i}
+                key={paragraph.label}
+                role="button"
+                tabIndex={0}
                 className={`group cursor-pointer transition-all duration-200 rounded-lg p-4 -m-4 ${
                   activeIndex === i
                     ? "bg-accent/5 border-l-2 border-accent pl-5"
@@ -65,6 +71,12 @@ export default function IntroScript() {
                 onClick={() =>
                   setActiveIndex(activeIndex === i ? null : i)
                 }
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setActiveIndex(activeIndex === i ? null : i);
+                  }
+                }}
               >
                 <span className="block text-[11px] font-mono text-accent/70 uppercase tracking-widest mb-2">
                   {paragraph.label}
@@ -92,6 +104,7 @@ export default function IntroScript() {
             ~90 seconds &middot; ~270 words &middot; Conversational pace
           </div>
         </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

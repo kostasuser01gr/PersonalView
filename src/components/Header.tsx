@@ -33,6 +33,9 @@ export default function Header() {
           <a href="#stack" className="hover:text-foreground transition-colors">
             Stack
           </a>
+          <a href="#certification" className="hover:text-foreground transition-colors">
+            Verified
+          </a>
           <a href="#video" className="hover:text-foreground transition-colors">
             Video
           </a>

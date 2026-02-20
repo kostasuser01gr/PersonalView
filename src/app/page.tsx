@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import TechStack from "@/components/TechStack";
+import Certification from "@/components/Certification";
 import VideoPlayer from "@/components/VideoPlayer";
 import IntroScript from "@/components/IntroScript";
 import Contact from "@/components/Contact";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <About />
         <TechStack />
+        <Certification />
         <VideoPlayer />
         <IntroScript />
         <Contact />

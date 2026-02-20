@@ -71,7 +71,7 @@ export default function VideoPlayer() {
           <div className="relative rounded-xl overflow-hidden border border-border glow-lg bg-black group/player">
             <video
               ref={videoRef}
-              src="/intro-v6.mp4"
+              src="/intro-v7.mp4"
               className="w-full"
               style={{ aspectRatio: "1024 / 1536" }}
               playsInline

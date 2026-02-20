@@ -24,7 +24,7 @@ export default function Header() {
           href="#"
           className="text-lg font-semibold tracking-tight text-foreground hover:text-accent transition-colors"
         >
-          K.
+          KF.
         </a>
         <div className="flex items-center gap-6 text-sm text-muted">
           <a href="#about" className="hover:text-foreground transition-colors">

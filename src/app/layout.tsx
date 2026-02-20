@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kostas — Full Stack Web Engineer",
+  title: "Konstantinos Foskolakis — Full Stack Engineer",
   description:
-    "Full Stack Web Engineer specializing in React, TypeScript, Python, APIs, and scalable web applications.",
+    "Full Stack Engineer specializing in React, TypeScript, Python APIs, and scalable web applications.",
   openGraph: {
-    title: "Kostas — Full Stack Web Engineer",
+    title: "Konstantinos Foskolakis — Full Stack Engineer",
     description:
-      "Full Stack Web Engineer specializing in React, TypeScript, Python, APIs, and scalable web applications.",
+      "Full Stack Engineer specializing in React, TypeScript, Python APIs, and scalable web applications.",
     type: "website",
   },
 };

@@ -17,7 +17,7 @@ export default function Contact() {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="mailto:kostas@example.com"
+            href="mailto:kostasfoskolakis19@gmail.com"
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium text-sm transition-all glow"
           >
             <svg
@@ -50,7 +50,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/"
+            href="https://www.linkedin.com/in/konstantinos-foskolakis-b63891260/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-border hover:border-muted text-foreground px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-surface"

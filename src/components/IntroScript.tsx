@@ -5,27 +5,31 @@ import { useState } from "react";
 const scriptParagraphs = [
   {
     label: "Introduction",
-    text: `Hi, I'm Kostas, and I'm a Full Stack Web Engineer.`,
+    text: `Hi, I'm Konstantinos — most people call me Kostas — and I'm a Full Stack Engineer.`,
   },
   {
-    label: "Stack",
-    text: `I work primarily with React and TypeScript on the frontend, Python on the backend, and I'm comfortable across the full lifecycle — from designing APIs and modeling databases to deploying and monitoring services in production.`,
+    label: "Background",
+    text: `I've been building web applications professionally for a few years now, working across both the frontend and backend. My day-to-day stack is React and TypeScript on the client side, Python for APIs and backend services, and I've worked with relational and non-relational databases — PostgreSQL, MongoDB, Redis, depending on what the project needs.`,
   },
   {
     label: "Experience",
-    text: `Most of my experience has been building SaaS platforms, internal tools, and web applications that need to scale reliably. The kind of systems where uptime matters, data integrity matters, and real users depend on things working correctly every day.`,
+    text: `Most of my work has been on SaaS platforms, internal tools, and web applications that need to handle real traffic and real users. The kind of systems where uptime matters, data has to be consistent, and things need to keep running smoothly as the product grows. I've been involved in the full lifecycle — from initial architecture and API design through to deployment, monitoring, and iteration.`,
   },
   {
-    label: "Philosophy",
-    text: `I care a lot about writing code that's easy to read, easy to maintain, and easy for the next person to pick up. I think about performance early, not as an afterthought — and I take security seriously at every layer, not just at the edge.`,
+    label: "How I Work",
+    text: `I put a lot of emphasis on writing clean, well-structured code. Not because it looks nice, but because it makes everything easier down the line — debugging, onboarding new people, adding features without breaking things. I think about performance from the start, and I take security seriously at every layer, not just at the perimeter.`,
   },
   {
-    label: "Looking for",
-    text: `What I'm looking for is a role where I can contribute to meaningful product work, solve real engineering problems, and grow alongside a team that values clean architecture and thoughtful execution.`,
+    label: "What I Value",
+    text: `I'm comfortable owning features end to end. I can take a spec, break it down, build it out, and ship it with proper tests and documentation. I'm also comfortable asking questions early when something isn't clear — I'd rather get alignment upfront than build the wrong thing quickly.`,
+  },
+  {
+    label: "Looking For",
+    text: `What I'm looking for next is a role where I can contribute to meaningful product work, solve real engineering problems, and work with a team that cares about doing things right. I'm open to full-time positions and contract work, and I'm happy to go deeper on any of this.`,
   },
   {
     label: "Close",
-    text: `Thanks for your time — I'd be happy to talk further.`,
+    text: `Thanks for watching — I'd be happy to talk further.`,
   },
 ];
 
@@ -36,11 +40,11 @@ export default function IntroScript() {
     <section id="script" className="py-32 px-6">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
-          Intro Script
+          Video Intro Script
         </h2>
         <p className="text-muted text-base mb-12 max-w-lg">
-          A 60-second introduction — ready to record or adapt for any
-          opportunity.
+          A 90-second introduction — ready to record. Click each section to
+          highlight it while practicing.
         </p>
 
         <div className="relative border border-border rounded-xl bg-surface/30 p-8 sm:p-10">
@@ -85,7 +89,7 @@ export default function IntroScript() {
               <circle cx="12" cy="12" r="10" />
               <polyline points="12 6 12 12 16 14" />
             </svg>
-            ~60 seconds &middot; ~160 words &middot; Conversational pace
+            ~90 seconds &middot; ~270 words &middot; Conversational pace
           </div>
         </div>
       </div>

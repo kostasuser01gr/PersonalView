@@ -56,13 +56,13 @@ export default function VideoPlayer() {
 
   return (
     <section id="video" className="py-32 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-md mx-auto">
         <RevealOnScroll>
           <h2 className="text-sm font-mono text-accent tracking-wide mb-4">
             Video Introduction
           </h2>
           <p className="text-muted text-base mb-10 max-w-lg">
-            A quick introduction — who I am, what I work with, and what
+            A two-minute introduction — who I am, what I work with, and what
             I&apos;m looking for.
           </p>
         </RevealOnScroll>
@@ -72,7 +72,8 @@ export default function VideoPlayer() {
             <video
               ref={videoRef}
               src="/intro-video.mp4"
-              className="w-full aspect-video"
+              className="w-full"
+              style={{ aspectRatio: "1024 / 1536" }}
               playsInline
               preload="metadata"
               onEnded={() => { setIsPlaying(false); setProgress(100); }}
@@ -98,7 +99,7 @@ export default function VideoPlayer() {
                 </div>
                 {!hasStarted && (
                   <span className="absolute bottom-8 text-sm text-white/70 font-medium">
-                    Click to play &middot; 0:08
+                    Click to play &middot; 2:34
                   </span>
                 )}
               </button>

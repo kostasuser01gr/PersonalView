@@ -39,7 +39,7 @@ export default function Hero() {
 
           <div className="opacity-0 animate-fade-in-up delay-300 flex flex-wrap gap-4">
             <a
-              href="#script"
+              href="#video"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium text-sm transition-all glow"
             >
               <svg
@@ -50,7 +50,7 @@ export default function Hero() {
               >
                 <path d="M8 5v14l11-7z" />
               </svg>
-              Watch Intro
+              Watch Video
             </a>
             <a
               href="#contact"

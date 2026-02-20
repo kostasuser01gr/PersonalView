@@ -59,7 +59,7 @@ export default function VideoPlayer() {
               </div>
               {!hasStarted && (
                 <span className="absolute bottom-8 text-sm text-white/70 font-medium">
-                  Click to play &middot; 1:56
+                  Click to play &middot; 0:08
                 </span>
               )}
             </button>
